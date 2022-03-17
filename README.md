@@ -9,7 +9,7 @@ It further assumes an existing directory with a containing chordpro config `--co
 For more details check on 
 ```
 chordpro/make_chordpro_book.sh
-make_tex_book.sh
+latex/make_tex_book.sh
 ```
 
 The resulting files will be generated to a new `/data/output/` directory.
