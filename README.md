@@ -1,6 +1,6 @@
 # chordpro_book_maker_docker
 
-This is a little helper to build a chordpro pdf from the actual latex-dev-tree of chordpro and directly build a Latex-book/pandoc book/epub and html page out of the requested build.
+This is a little helper to build a chordpro pdf from the actual latex-dev-tree of chordpro and directly build a [Latex-book](http://songs.sourceforge.net/songsdoc/songs.html)/[pandoc book/epub and html](https://pandoc.org/) page out of the requested build (markdown and tex)
 
 The mounted directory from `.env` will be mounted to `/data`.
 It assumes the requested chorpro files to end on \*.pro (and not the default .cho) - but you can change this by parametrise the `.sh` files in chordpro and latex service folders.
