@@ -6,5 +6,5 @@ cd /data/output
 lualatex $INPUTP.tex
 texlua songidx.lua -b protestant.can cbtitle.sxd cbtitle.sbx
 lualatex $INPUTP.tex
-pandoc $INPUTP.md  metadata.txt --metadata title="Stamm Hattstein Lieder"  --table-of-contents -s -o $INPUTP.html
-pandoc --toc --toc-depth=1 --epub-metadata=metadata.txt --epub-cover-image=Stamm-Hattstein-komplett.png --css=liederbuch.css -o $INPUTP.epub metadata.txt $INPUTP.md 
+#pandoc $INPUTP.md  metadata.txt --metadata title="Stamm Hattstein Lieder"  --table-of-contents -s -o $INPUTP.html
+#pandoc --toc --toc-depth=1 --epub-metadata=metadata.txt --epub-cover-image=Stamm-Hattstein-komplett.png --css=liederbuch.css -o $INPUTP.epub metadata.txt $INPUTP.md 
