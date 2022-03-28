@@ -9,7 +9,7 @@ WORKDIR /workspaces/chordpro
 RUN cpanm --installdeps --notest .
 RUN perl Makefile.PL && \
     make  && \
-    make test  && \
+    # make test  && \
     make install
 
 WORKDIR /root
