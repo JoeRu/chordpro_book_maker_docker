@@ -4,7 +4,7 @@ echo "Parameter für default Filename: $INPUTP(.tex, .md)"
 
 cd /data/output
 lualatex $INPUTP.tex
-# texlua songidx.lua -b bible.can scrpfile.sxd scrpfile.sbx
+texlua songidx.lua -b bible.can scrpfile.sxd scrpfile.sbx
 texlua songidx.lua -b protestant.can cbauth.sxd cbauth.sbx
 texlua songidx.lua -b protestant.can cbtitle.sxd cbtitle.sbx
 texlua songidx.lua -b protestant.can cbscrip.sxd cbscrip.sbx
