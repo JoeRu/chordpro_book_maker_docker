@@ -10,3 +10,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 
 COPY *.sh /usr/bin/
 RUN chmod +x /usr/bin/*.sh
+
+COPY test.tex /root/
+WORKDIR /root/
+RUN lualatex test.tex
