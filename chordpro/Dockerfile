@@ -14,5 +14,5 @@ RUN perl Makefile.PL && \
 
 WORKDIR /root
 
-COPY make_chordpro_book.sh /usr/bin/
-RUN chmod +x /usr/bin/make_chordpro_book.sh
+COPY *.sh /usr/bin/
+RUN chmod +x /usr/bin/*.sh
