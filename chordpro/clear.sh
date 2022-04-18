@@ -1,3 +1,12 @@
 #!/bin/bash
+if ! [[ -d /data/output/ ]]
+then
+    mkdir /data/output
+else
+    cd /data/output
+    rm -Rf *
+fi
 cd /data
-rm -Rf output/
+cp *.md ./output/
+cp *.png ./output/
+cp -R build/* output/

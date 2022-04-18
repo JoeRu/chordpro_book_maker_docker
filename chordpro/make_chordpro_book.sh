@@ -21,4 +21,4 @@ chordpro --config=build/myconfig.json $INPUTP --output $OUTPUTP.md
 cp $INPUT_PATH/*.png output/
 cp $INPUT_PATH/*.md output/
 #cp *.tex output/
-cp -R build/* output/
+
