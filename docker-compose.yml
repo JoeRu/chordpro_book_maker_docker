@@ -1,28 +1,13 @@
 version: '3'
 
 services:
-  chordpro:
-    build: chordpro
-    volumes:
-      - "${DATA}:/data"
-      - "/etc/localtime:/etc/localtime:ro"
-      - "/etc/timezone:/etc/timezone:ro"
-#    restart: always
-  
-  latex: 
-    build: latex
-    volumes:
-      - "${DATA}:/data"
-      - "/etc/localtime:/etc/localtime:ro"
-      - "/etc/timezone:/etc/timezone:ro"
 
-  # php:
-  #   image: php:apache
-  #   ports:
-  #     - 80
-  #   volumes:
-  #     - "${DATA}:/var/www/html/data"
-  #     - "./html:/var/www/html/"
-  #     - "/etc/localtime:/etc/localtime:ro"
-  #     - "/etc/timezone:/etc/timezone:ro"
-
+  web:
+    build: web
+    restart: always
+    ports:
+      - "8087:80"
+    volumes:
+      - ./web/FileLister:/var/www/html
+      - "${DATA}:/var/www/html/Liederbuch"
+      - /var/run/docker.sock:/var/run/docker.sock
