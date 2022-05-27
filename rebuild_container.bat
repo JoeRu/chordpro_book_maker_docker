@@ -1,3 +1,2 @@
 docker-compose down --remove-orphans
-docker-compose build
-@REM  --no-cache
+docker-compose build --no-cache
