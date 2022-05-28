@@ -12,9 +12,9 @@ then
     mkdir /data/output
 fi
 cd /data
-rm $OUTPUTP.tex
+#rm $OUTPUTP.tex
 chordpro --config=build/myconfig.json $INPUTP --output $OUTPUTP.tex
-rm $OUTPUTP.md
+#rm $OUTPUTP.md
 chordpro --config=build/myconfig.json $INPUTP --output $OUTPUTP.md
 
 

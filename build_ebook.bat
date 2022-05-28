@@ -1,5 +1,6 @@
 docker-compose down --remove-orphans
-docker-compose run chordpro clear.sh
+Powershell.exe -File clean_output.ps1
+
 docker-compose run chordpro make_chordpro_book.sh Stammeslieder/*.pro output/Stammeslieder
 docker-compose run chordpro make_chordpro_book.sh Essenslieder/*.pro output/Essenslieder
 docker-compose run chordpro make_chordpro_book.sh Meutenlieder/*.pro output/Meutenlieder
