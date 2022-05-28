@@ -15,3 +15,4 @@ latex/make_tex_book.sh
 The resulting files will be generated to a new `/data/output/` directory.
 
 *under development* - it's more a code-keeper. But may help on the task of creating a Latex-Songbook out of a bunch of chordpro files.
+_Calibre dependency is new._

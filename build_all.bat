@@ -14,4 +14,6 @@ docker-compose run chordpro make_chordpro_book.sh Roverlieder/Politische_Lieder/
 docker-compose run chordpro prepare.sh
 
 docker-compose run latex make_all.sh
+docker-compose run latex make_ebook.sh
+poweshell convert_ebook2kindle.ps1
 docker-compose down --remove-orphans
