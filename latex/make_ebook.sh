@@ -4,7 +4,7 @@ echo "Parameter für default Filename: $INPUTP(.tex, .md)"
 
 cd /data/output
 
-perl -p -i -e 's/^# /## /g' Stammeslieder.md Meutenlieder.md
+perl -p -i -e 's/^# /## /g' Stammeslieder.md Meutenlieder.md Essenslieder.md
 perl -p -i -e 's/^# /### /g' Morgenlieder.md Fahrten.md AmLagerfeuer.md Seemansgarn.md Abendlieder.md Kneipen-Lieder.md Landsknecht+Soldatenlieder.md PolitischeLieder.md 
 #Resize images for ebook
 mogrify -units PixelsPerInch -density 300 -resize '450x450>' *.png
