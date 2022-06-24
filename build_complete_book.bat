@@ -13,6 +13,6 @@ docker-compose run chordpro make_chordpro_book.sh Roverlieder/Landsknecht+Soldat
 docker-compose run chordpro make_chordpro_book.sh Roverlieder/Politische_Lieder/*.pro output/PolitischeLieder
 @REM docker-compose run chordpro prepare.sh
 
-docker-compose run latex make_complete_tex_book.sh
+docker-compose run latex make_complete_tex_book.sh Liederbuch
 
 docker-compose down --remove-orphans

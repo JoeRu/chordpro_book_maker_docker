@@ -7,6 +7,6 @@ else
     rm -Rf *
 fi
 cd /data
-#cp *.md ./output/
+cp *.md ./output/
 #cp *.png ./output/
-#cp -R build/* output/
+cp -R build/* output/

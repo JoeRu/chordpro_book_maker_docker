@@ -15,5 +15,5 @@ docker-compose run chordpro prepare.sh
 
 docker-compose run latex make_all.sh
 docker-compose run latex make_ebook.sh
-poweshell convert_ebook2kindle.ps1
+powershell convert_ebook2kindle.ps1
 docker-compose down --remove-orphans
